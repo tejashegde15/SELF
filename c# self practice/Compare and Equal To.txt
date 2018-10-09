@@ -1,0 +1,36 @@
+using System;
+
+namespace examples
+{
+	class Program{
+  
+        static void Main(string[] args)
+        {
+	        
+			String str1="Test Scripts";
+			String str2="Test Scripts";
+			
+			Console.WriteLine("COMPARING TWO STRINGS str1 and str2 "+str1.CompareTo(str2).ToString());
+			
+			Console.WriteLine("COMPARING TWO STRINGS str1 and str2 "+str1.Equals(str2).ToString());
+          
+            Console.WriteLine("Extracting first 6 characters "+ str1.Substring(0,6));
+			
+			 Console.WriteLine("Returning index of a string "+ str1.IndexOf("Script"));
+			 
+			 Console.WriteLine("INSERTING A STRING  "+ str1.Insert(4,"ta"));
+			 
+			 Console.WriteLine("REPLACE A STRING  "+ str1.Replace("T","X"));
+			 
+			  Console.WriteLine("REMOVE LAST 6 CHARACTERS  "+ str1.Remove(5,6));
+			 
+			 
+
+			
+			
+ 
+
+      }
+		
+    }
+}

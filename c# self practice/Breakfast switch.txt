@@ -1,0 +1,108 @@
+using System;
+
+namespace examples
+{
+	
+	class Menu
+	{
+		
+		
+		public void ShowMenu()
+		{
+		
+		Console.WriteLine("Menu");
+	    Console.WriteLine("*************");
+	    Console.WriteLine("1) IDLI");
+	    Console.WriteLine("2) DOSA");
+	    Console.WriteLine("3) POORI");
+	    Console.WriteLine("4) RICE");
+	    Console.WriteLine("5) CHAPATI");
+		Console.WriteLine("*************");
+		Console.WriteLine("");
+		
+	    
+		
+			
+		}
+		
+		
+	}
+	class Program{
+  
+        static void Main(string[] args)
+        {
+	        
+		int myInt,select1;
+		String myInput,myInput1;
+		Program pr=new Program();
+		Menu m1=new Menu();
+		bool value=true;
+		m1.ShowMenu();
+		begin:
+		while(value)
+		{
+		Console.WriteLine("");
+	    Console.WriteLine("PLEASE CHOOSE AN ITEM OR Q TO QUIT");
+	    myInput=Console.ReadLine();
+	    myInt=Int32.Parse(myInput);	
+		printer(myInt);
+		Console.WriteLine("");
+		Console.WriteLine("Type 1 to continue and 0 to quit");
+	    myInput1=Console.ReadLine();
+		select1=Int32.Parse(myInput1);
+		switch(select1)
+		{
+			case 1:
+					goto begin;
+					break;
+			case 0:
+					Console.WriteLine("BYE");
+					value=false;
+					break;
+			default:Console.WriteLine("WRONG SELECTION MADE");
+					value=false;
+					break;
+		}		
+		
+		
+		}
+        }
+		
+		static void printer(int myInt)
+		{
+	    switch(myInt)
+		{
+			
+	
+		case 1:
+		
+			Console.WriteLine("1)YOU HAVE SELECTED IDLI");
+		     break;
+	     case 2:
+		
+			Console.WriteLine("2)YOU HAVE SELECTED DOSA");
+		    break;
+	     case 3:
+		
+			Console.WriteLine("3)YOU HAVE SELECTED POORI");
+		    break;
+	     case 4:
+		
+			Console.WriteLine("4)YOU HAVE SELECTED RICE");
+		    break;
+	      case 5:
+		
+			Console.WriteLine("5)YOU HAVE SELECTED CHAPATI");
+		    break;
+		default:Console.WriteLine("WRONG OPTION");
+				break;
+		
+       
+	    }
+	    }
+		
+		
+		
+		
+    }
+}

@@ -1,0 +1,34 @@
+ string input = "WWW.C-SHARPCORNER.COM";
+
+ 
+
+            while (input.Length > 0)
+
+            {
+
+                Console.Write(input[0] + " : ");
+
+                int count = 0;
+
+                for (int j = 0; j < input.Length; j++)
+
+                {
+
+                    if (input[0] == input[j])  
+                    int count = 0;                     
+
+                    {
+
+                        count++;
+
+                    }
+
+                }
+
+                Console.WriteLine(count); 
+
+                input = input.Replace(input[0].ToString(),string.Empty);               
+
+            }
+
+            Console.ReadLine();

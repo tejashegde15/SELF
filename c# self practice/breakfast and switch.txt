@@ -1,0 +1,84 @@
+using System;
+
+namespace examples
+{
+	
+    class Program
+    {
+	enum decision
+	{
+          continues,
+	  quit
+	}
+        static void Main(string[] args)
+        {
+	    String myInput;
+	    int myInt;
+	    decision decide=decision.quit;
+	    
+begin:
+       	    Console.WriteLine("Menu");
+	    Console.WriteLine("*************");
+	    Console.WriteLine("1)IDLI");
+	    Console.WriteLine("2)DOSA");
+	    Console.WriteLine("3)POORI");
+	    Console.WriteLine("4)RICE");
+	    Console.WriteLine("5)CHAPATI");
+	    Console.WriteLine("PLEASE CHOOSE");
+	    myInput=Console.ReadLine();
+	    myInt=Int32.Parse(myInput);
+	    
+            switch(myInt)
+		{
+			case 1:
+				Console.WriteLine("YOU HAVE ENTERED IDLI");
+				break;
+			case 2:
+				Console.WriteLine("YOU HAVE ENTERED DOSA");
+				break;	
+			case 3:
+				Console.WriteLine("YOU HAVE ENTERED POORI");
+				break;	
+			case 4:
+				Console.WriteLine("YOU HAVE ENTERED RICE");
+				break;	
+                        case 5:
+				Console.WriteLine("YOU HAVE ENTERED SAMBAR");
+				break;				
+
+			default:
+				Console.WriteLine("YOUR NUMBER {0} is not between 1 and 5",myInt);
+				break;
+		}
+
+decide:
+		
+		switch(decide)
+		{
+			case decision.continues:
+					goto begin;
+					break;
+			case decision.quit:
+					Console.WriteLine("BYE");
+					break;
+			default:goto decide;
+					break;
+		}			
+
+
+
+
+	    
+	    
+	    
+	
+
+        }
+    }
+}
+
+
+
+
+
+

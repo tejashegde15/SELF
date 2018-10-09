@@ -1,0 +1,50 @@
+using System;
+
+namespace examples
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+	    String myInput;
+	    int myInt;
+            Console.WriteLine("Menu");
+	    Console.WriteLine("*************");
+	    Console.WriteLine("1)IDLI");
+	    Console.WriteLine("2)DOSA");
+	    Console.WriteLine("3)POORI");
+	    Console.WriteLine("4)RICE");
+	    Console.WriteLine("5)CHAPATI");
+	    Console.WriteLine("PLEASE CHOOSE");
+	    myInput=Console.ReadLine();
+	    myInt=Int32.Parse(myInput);
+
+	    if(myInt==1)
+		{
+			Console.WriteLine("1)IDLI");
+		}
+	      if(myInt==2)
+		{
+			Console.WriteLine("2)DOSA");
+		}
+	     if(myInt==3)
+		{
+			Console.WriteLine("3)POORI");
+		}
+	       if(myInt==4)
+		{
+			Console.WriteLine("4)RICE");
+		}
+	         if(myInt==5)
+		{
+			Console.WriteLine("5)SAMBAR");
+		}
+
+	    
+	    
+	    
+	
+
+        }
+    }
+}

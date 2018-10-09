@@ -1,0 +1,103 @@
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			ArrayList a=new ArrayList();
+			
+			//a.Add("hey");
+			foreach(var item in a)
+			{
+				Console.WriteLine(item);
+			}
+			Console.WriteLine("***********************");
+			a.Remove("hey");
+			foreach(var item in a)
+			{
+				Console.WriteLine(item);
+			}
+			Console.WriteLine("***********************");
+			a.RemoveAt(3);
+			foreach(var item in a)
+			{
+				Console.WriteLine(item);
+			}
+			a.RemoveRange(1,3);
+			Console.WriteLine("***********************");
+			foreach(var item in a)
+			{
+				Console.WriteLine(item);
+			}
+			Console.WriteLine(a.Count);
+			Console.WriteLine(a.Capacity);
+			//PrintValues(a);
+		
+			
+		}
+	}
+	
+}
+
+
+using System;
+using System.Collections;
+namespace examples
+{
+	class Person
+	{
+		public string name;
+		int age;
+		string lname;
+		
+		public Person(string fname,int age,string lname)
+		{
+			this.name=fname;
+			this.age=age;
+			this.lname=lname;
+		}
+		public override string ToString()
+		{
+			return name+age+lname;
+		}
+	}
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			ArrayList a=new ArrayList();
+			int set=0;
+			Person p=new Person("tejas",22,"hegde");
+			Person p1=new Person("vishal",22,"kulkarni");
+			Person p2=new Person("pradeep",22,"tripathi");
+			Person p3=new Person("raif",22,"mohammed");
+			Person[] parray=new Person[5];
+			a.Add(p);
+			a.Add(p1);
+			a.Add(p2);
+			a.Add(p3);
+			
+			//a.Add("hey");
+			foreach(var item in a)
+			{
+				Console.WriteLine(item.ToString());
+			}
+			int count=0;
+			for(int i=0;i<a.Count;i++)
+			{
+				Person m=(Person)a[i];
+				string name=m.name;
+				//Console.WriteLine(name);
+				if(name=="vishal")
+				{
+					set=i;
+				}
+			}
+			Console.WriteLine(set);
+		    a[set]=new Person("vishal",21,"k");
+			foreach(var item in a)
+			{
+				Console.WriteLine(item.ToString());
+			}
+		}
+	}
+	
+}

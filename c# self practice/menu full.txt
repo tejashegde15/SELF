@@ -1,0 +1,148 @@
+using System;
+
+
+
+namespace examples
+{
+	
+	class Menu
+    {
+		public int srno;
+		public String iname;
+		public int price;
+		public int quantity;
+		public int itotal;
+      public Menu(int srno1,String iname1,int price1,int quantity1,int itotal1)
+	  {
+		  srno=srno1;
+		  iname=iname1;
+		  price=price1;
+		  quantity=quantity1;
+		  itotal=itotal1;
+	  }
+	  
+	} 
+		  
+		
+	class Program{
+  
+        public static void Main(string[] args)
+        {
+	       
+		   
+		   Menu[] marray=new Menu[5];
+		   Program p=new Program();
+		   p.createMenu(marray,p);
+		}
+		
+		public void createMenu(Menu[] marray,Program p)
+		{
+		   marray[0]=new Menu(1,"idli",40,0,0);
+		   marray[1]=new Menu(2,"dosa",50,0,0);
+		   marray[2]=new Menu(3,"poori",30,0,0);
+		   marray[3]=new Menu(4,"upma",60,0,0);
+		   marray[4]=new Menu(5,"chapati",70,0,0);
+		   p.printMenu(marray,p);
+		}
+		public void printMenu(Menu[] marray,Program p)
+		{
+		      Console.WriteLine("**********************************MENU*******************************************************");
+			  Console.WriteLine("SRNO		      "+"ITEMNAME	     "+"PRICE		");
+			   Console.WriteLine("********************************************************************************************");
+		   for(int counter=0;counter<marray.Length;counter++)
+		   {
+			
+			   Console.WriteLine();
+			   Console.Write(marray[counter].srno+"			");
+			   Console.Write(marray[counter].iname+"		");
+			   Console.Write(marray[counter].price+"		");
+		   }
+		   p.chooseItem(marray,p);
+		   
+        }
+		public void chooseItem(Menu[] marray,Program p)
+		{
+		String myInput;
+		int myInt;
+		int totalcost;
+		while(true)
+		{
+		Console.WriteLine("");
+	    Console.WriteLine("PLEASE CHOOSE AN ITEM");
+	    myInput=Console.ReadLine();
+	    myInt=Int32.Parse(myInput);
+        switch(myInt)
+		{
+			case 1:
+				Console.WriteLine("YOU HAVE ENTERED IDLI");
+				marray[0].itotal=marray[0].itotal+marray[0].price;
+				marray[0].quantity=marray[0].quantity+1;
+				break;
+			case 2:
+				Console.WriteLine("YOU HAVE ENTERED DOSA");
+				marray[1].itotal=marray[1].itotal+marray[1].price;
+				marray[1].quantity=marray[1].quantity+1;
+				break;	
+			case 3:
+				Console.WriteLine("YOU HAVE ENTERED POORI");
+				marray[2].itotal=marray[2].itotal+marray[2].price;
+				marray[2].quantity=marray[2].quantity+1;
+				break;	
+			case 4:
+				Console.WriteLine("YOU HAVE ENTERED RICE");
+				marray[3].itotal=marray[3].itotal+marray[3].price;
+				marray[3].quantity=marray[3].quantity+1;
+				break;	
+            case 5:
+				Console.WriteLine("YOU HAVE ENTERED SAMBAR");
+				marray[4].itotal=marray[4].itotal+marray[4].price;
+				marray[4].quantity=marray[4].quantity+1;
+				break;				
+
+			default:
+				Console.WriteLine("YOUR NUMBER {0} is not between 1 and 5",myInt);
+				break;
+			
+		
+		}
+		Console.WriteLine("");
+		Console.WriteLine("Type 1 to continue and 0 to quit");
+	    String myInput1=Console.ReadLine();
+		int select1=Int32.Parse(myInput1);
+		
+		switch(select1)
+		{
+			case 1:continue;
+		           break;
+		     case 0:p.billoutput(marray,p);
+					goto end;
+					break;
+					
+			default:Console.WriteLine("Wrong option entered");
+					break;
+		
+			
+		}
+		}
+	}
+	public void billoutput(Menu[] marray,Program p)
+	{
+		Console.WriteLine("**********************************MENU*******************************************************");
+			  Console.WriteLine("SRNO		      "+"ITEMNAME	     "+"PRICE		");
+			   Console.WriteLine("********************************************************************************************");
+		   for(int counter=0;counter<marray.Length;counter++)
+		   {
+			
+			   Console.WriteLine();
+			   Console.Write(marray[counter].srno+"			");
+			   Console.Write(marray[counter].iname+"		");
+			   Console.Write(marray[counter].price+"		");
+			   Console.Write(marray[counter].quantity+"		");
+			   Console.Write(marray[counter].itotal+"		");
+		   }
+		   
+	}
+	end:
+	
+}
+}  

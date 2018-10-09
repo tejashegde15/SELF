@@ -1,0 +1,1962 @@
+dotnet build-compilation
+dotnet run-run the program
+dotnet new console -new program
+
+
+
+using System;
+
+namespace examples
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+	    String myInput;
+	    int myInt;
+            Console.WriteLine("Menu");
+	    Console.WriteLine("*************");
+	    Console.WriteLine("1)IDLI");
+	    Console.WriteLine("2)DOSA");
+	    Console.WriteLine("3)POORI");
+	    Console.WriteLine("4)RICE");
+	    Console.WriteLine("5)CHAPATI");
+	    Console.WriteLine("PLEASE CHOOSE");
+	    myInput=Console.ReadLine();
+	    myInt=Int32.Parse(myInput);
+
+	    if(myInt==1)
+		{
+			Console.WriteLine("1)IDLI");
+		}
+	      if(myInt==2)
+		{
+			Console.WriteLine("2)DOSA");
+		}
+	     if(myInt==3)
+		{
+			Console.WriteLine("3)POORI");
+		}
+	       if(myInt==4)
+		{
+			Console.WriteLine("4)RICE");
+		}
+	         if(myInt==5)
+		{
+			Console.WriteLine("5)SAMBAR");
+		}
+
+	    
+	    
+	    
+	
+
+        }
+    }
+}
+
+***************************************************************************************
+
+
+using System;
+
+namespace examples
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+	    String myInput;
+	    int myInt;
+	    
+begin:
+       	    Console.WriteLine("WELCOME");
+	    myInput=Console.ReadLine();
+	    myInt=Int32.Parse(myInput);
+	    
+            switch(myInt)
+		{
+			case 1:
+				Console.WriteLine("YOU HAVE ENTERED {0}",myInt);
+				break;
+			case 2:
+				Console.WriteLine("YOU HAVE ENTERED {0}",myInt);
+				break;	
+			case 3:
+				Console.WriteLine("YOU HAVE ENTERED {0}",myInt);
+				break;	
+			default:
+				Console.WriteLine("YOUR NUMBER {0} is not between 0 and 3",myInt);
+				break;
+		}
+
+decide:
+		Console.WriteLine("Type \"continue\" or \"quit\" to quit",myInt);
+	    	    myInput=Console.ReadLine();
+		switch(myInput)
+		{
+			case "continue":
+					goto begin;
+					break;
+			case "quit":
+					Console.WriteLine("BYE");
+					break;
+			default:goto decide;
+					break;
+		}			
+
+
+
+********************************************************************************
+	    
+	    
+	    
+	
+
+        }
+    }
+}
+************************************
+
+using System;
+
+namespace examples
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+	    String myInput;
+	    int myInt;
+	    
+            bool male=false;
+		if(male)
+			{
+				Console.WriteLine("You are male");
+			}
+		else
+			{
+				Console.WriteLine("You are female");
+			}	
+	    
+	    
+	
+
+        }
+    }
+}
+*******************************
+
+using System;
+
+namespace examples
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+	    String myInput;
+	    int myInt;
+	    
+           byte a=254;
+		Console.WriteLine(a);
+		a++;
+		Console.WriteLine(a);
+		a++;
+	    
+		Console.WriteLine(a);
+		a++;
+	    
+	    
+	
+
+        }
+    }
+}
+
+
+********************************
+
+using System;
+
+namespace examples
+{
+    class Program
+    {
+
+	enum Days
+	{
+		Monday,
+		Tuesday,
+		Wednesday,
+		Thursday,
+		Friday,
+		Saturday,
+		Sunday
+	}
+        static void Main(string[] args)
+        {
+	    String myInput;
+	    int myInt;
+	    Days day=Days.Monday;
+		
+            if(day==Days.Monday)
+		{
+			Console.WriteLine("This is Monday");
+		}
+
+	    
+     	
+
+        }
+    }
+}
+
+***********************************************************************************
+
+
+using System;
+
+namespace examples
+{
+	
+    class Program
+    {
+	enum decision
+	{
+          continues,
+	  quit
+	}
+        static void Main(string[] args)
+        {
+	    String myInput;
+	    int myInt;
+	    decision decide=decision.quit;
+	    
+begin:
+       	    Console.WriteLine("Menu");
+	    Console.WriteLine("*************");
+	    Console.WriteLine("1)IDLI");
+	    Console.WriteLine("2)DOSA");
+	    Console.WriteLine("3)POORI");
+	    Console.WriteLine("4)RICE");
+	    Console.WriteLine("5)CHAPATI");
+	    Console.WriteLine("PLEASE CHOOSE");
+	    myInput=Console.ReadLine();
+	    myInt=Int32.Parse(myInput);
+	    
+            switch(myInt)
+		{
+			case 1:
+				Console.WriteLine("YOU HAVE ENTERED IDLI");
+				break;
+			case 2:
+				Console.WriteLine("YOU HAVE ENTERED DOSA");
+				break;	
+			case 3:
+				Console.WriteLine("YOU HAVE ENTERED POORI");
+				break;	
+			case 4:
+				Console.WriteLine("YOU HAVE ENTERED RICE");
+				break;	
+                        case 5:
+				Console.WriteLine("YOU HAVE ENTERED SAMBAR");
+				break;				
+
+			default:
+				Console.WriteLine("YOUR NUMBER {0} is not between 1 and 5",myInt);
+				break;
+		}
+
+decide:
+		
+		switch(decide)
+		{
+			case decision.continues:
+					goto begin;
+					break;
+			case decision.quit:
+					Console.WriteLine("BYE");
+					break;
+			default:goto decide;
+					break;
+		}			
+
+
+
+
+	    
+	    
+	    
+	
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+******************************************************************************************************************************************************************
+
+NOTE
+
+
+
+1)INLINE INDENTATION(SINGLE LINE AND BLOCK LINE COMMENTS).
+
+2)PROGRAM DISPLAY SHOULD BE CLEAR.
+
+3) PROPER NAMING OF THE VARIABLES.
+
+1)SWAPPING TWO NUMBERS,FNAME AND LNAME
+
+2)TAKE A SENTENCEAND PRINT THE VOWELS ONLY ONCE.
+
+3)count of a letter.(Case insensitive)
+
+*******************************************
+using System;
+
+namespace examples
+{
+	class Program{
+  
+        static void Main(string[] args)
+        {
+	         int num1,num2;   //two numbers to be swapped
+			 num1=5;			//initialize num1
+			 num2=7;			//initialize num2
+			 Console.WriteLine(num1);     //print num1
+			 Console.WriteLine(num2);     //print num2
+											//call function swap
+			 num1=num1+num2;              //add two numbers 5+7=12
+			 num2=num1-num2;              //subtract num2 from num1
+			 num1=num1-num2;              //subtract num1 from num2
+			 Console.WriteLine(num1);     //print num1
+			 Console.WriteLine(num2);     //print num2
+			 
+
+        }
+		
+    }
+}
+
+
+***********************************************
+
+using System;
+
+namespace examples
+{
+	class Program{
+  
+        static void Main(string[] args)
+        {
+	  string str;              //declare string
+	  int i;
+	
+      	  Console.Write("\n\nPrint the vowels :\n");
+      	  Console.Write("----------------------------------------------\n"); 	
+      	  Console.Write("Input the string : ");           //read the input
+      	  str = Console.ReadLine();		
+
+		
+          int len = str.Length;                       //find the length of the string
+
+          for(i=0; i<len; i++)                        
+          {
+
+		        if(str[i] =='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u' || str[i]=='A' || str[i]=='E' || str[i]=='I' || str[i]=='O' || str[i]=='U')
+		{
+					Console.WriteLine(str[i]);     //print the vowels
+		}
+			 
+
+          }
+		
+        }
+   }
+}
+
+
+********************************************************************************************************************
+
+
+
+
+
+
+
+
+
+using System;
+
+namespace examples
+{
+	class Program{
+  
+        static void Main(string[] args)
+        {
+	        string fullName = "Tejas Hegde";           //initializing the string
+			var names = fullName.Split(' ');    //using function split to split name
+			string firstName = names[0];        //store fname
+			string lastName = names[1];         //store lname
+			Console.WriteLine(firstName);       //print firstname
+			Console.WriteLine(lastName);        //print lastname
+
+			 
+
+      }
+		
+    }
+}
+
+
+
+
+
+
+
+*************************************************************************************************
+
+
+ string input = "WWW.C-SHARPCORNER.COM";
+
+ 
+
+            while (input.Length > 0)
+
+            {
+
+                Console.Write(input[0] + " : ");
+
+                int count = 0;
+
+                for (int j = 0; j < input.Length; j++)
+
+                {
+
+                    if (input[0] == input[j])  
+                    int count = 0;                     
+
+                    {
+
+                        count++;
+
+                    }
+
+                }
+
+                Console.WriteLine(count); 
+
+                input = input.Replace(input[0].ToString(),string.Empty);               
+
+            }
+
+            Console.ReadLine();
+
+
+***********************************************************************************************************************
+
+
+using System;
+
+namespace examples
+{
+	class Program{
+  
+        static void Main(string[] args)
+        {
+	        
+			String str1="Test Scripts";
+			String str2="Test Scripts";
+			
+			Console.WriteLine("COMPARING TWO STRINGS str1 and str2 "+str1.CompareTo(str2).ToString());
+			
+			Console.WriteLine("COMPARING TWO STRINGS str1 and str2 "+str1.Equals(str2).ToString());
+          
+            Console.WriteLine("Extracting first 6 characters "+ str1.Substring(0,6));
+			
+			 Console.WriteLine("Returning index of a string "+ str1.IndexOf("Script"));
+			 
+			 Console.WriteLine("INSERTING A STRING  "+ str1.Insert(4,"ta"));
+			 
+			 Console.WriteLine("REPLACE A STRING  "+ str1.Replace("T","X"));
+			 
+			  Console.WriteLine("REMOVE LAST 6 CHARACTERS  "+ str1.Remove(5,6));
+			 
+			 
+
+			
+			
+ 
+
+      }
+		
+    }
+}
+
+
+********************************************************************************************************************************
+
+
+using System;
+
+namespace examples
+{
+	
+	class Menu
+	{
+		
+		
+		public void ShowMenu()
+		{
+		
+		Console.WriteLine("Menu");
+	    Console.WriteLine("*************");
+	    Console.WriteLine("1) IDLI");
+	    Console.WriteLine("2) DOSA");
+	    Console.WriteLine("3) POORI");
+	    Console.WriteLine("4) RICE");
+	    Console.WriteLine("5) CHAPATI");
+		Console.WriteLine("*************");
+		Console.WriteLine("");
+		
+	    
+		
+			
+		}
+		
+		
+	}
+	class Program{
+  
+        static void Main(string[] args)
+        {
+	        
+		int myInt,select1;
+		String myInput,myInput1;
+		Program pr=new Program();
+		Menu m1=new Menu();
+		bool value=true;
+		m1.ShowMenu();
+		begin:
+		while(value)
+		{
+		Console.WriteLine("");
+	    Console.WriteLine("PLEASE CHOOSE AN ITEM OR Q TO QUIT");
+	    myInput=Console.ReadLine();
+	    myInt=Int32.Parse(myInput);	
+		printer(myInt);
+		Console.WriteLine("");
+		Console.WriteLine("Type 1 to continue and 0 to quit");
+	    myInput1=Console.ReadLine();
+		select1=Int32.Parse(myInput1);
+		switch(select1)
+		{
+			case 1:
+					goto begin;
+					break;
+			case 0:
+					Console.WriteLine("BYE");
+					value=false;
+					break;
+			default:Console.WriteLine("WRONG SELECTION MADE");
+					value=false;
+					break;
+		}		
+		
+		
+		}
+        }
+		
+		static void printer(int myInt)
+		{
+	    switch(myInt)
+		{
+			
+	
+		case 1:
+		
+			Console.WriteLine("1)YOU HAVE SELECTED IDLI");
+		     break;
+	     case 2:
+		
+			Console.WriteLine("2)YOU HAVE SELECTED DOSA");
+		    break;
+	     case 3:
+		
+			Console.WriteLine("3)YOU HAVE SELECTED POORI");
+		    break;
+	     case 4:
+		
+			Console.WriteLine("4)YOU HAVE SELECTED RICE");
+		    break;
+	      case 5:
+		
+			Console.WriteLine("5)YOU HAVE SELECTED CHAPATI");
+		    break;
+		default:Console.WriteLine("WRONG OPTION");
+				break;
+		
+       
+	    }
+	    }
+		
+		
+		
+		
+    }
+}
+
+
+************************************************
+
+using System;
+
+namespace examples
+{
+	
+	class OuterClass
+	{
+		String myString;
+		
+		public OuterClass()
+		{
+			Console.WriteLine("hey");
+		}
+		public OuterClass(String mString)
+		{
+			myString=mString;
+		}
+		
+		public void printOuterClass()
+		{
+			Console.WriteLine("{0}",myString);
+		}
+		
+	}
+	class Program{
+  
+        static void Main(string[] args)
+        {
+	       OuterClass outer=new OuterClass("hey how are you");
+		   OuterClass outer1=new OuterClass();
+			outer.printOuterClass();
+		
+	    
+		
+		
+		}
+		
+
+
+************************************************************************************************************************************************************
+
+
+class A MA(console)
+CONSA
+
+CLASS B MB()
+CONSB-OBJA
+
+OUTERCLASS
+MAIN(OBJ B) 
+PRINT MB();
+
+************************************************************************************************************************************************************
+
+using System;
+
+namespace examples
+{
+	
+	class A
+	{
+		public A()
+		{
+			Console.WriteLine("A's constructor is called");
+			methodA();
+		}
+		public void methodA()
+		{
+			Console.WriteLine("A's method is called");
+		}
+	}
+	class B
+	{
+		public B()
+		{
+			A a=new A();
+			Console.WriteLine("B's constructor is called");
+		}
+		public void methodB()
+		{
+			Console.WriteLine("B's method is called");
+		}
+	}	
+	class Program{
+  
+        static void Main(string[] args)
+        {
+	       B b=new B();
+		   b.methodB();
+		
+	    
+		
+		
+		}
+		
+		
+		
+		
+    }
+}
+
+*************************************************************************************
+
+
+
+
+
+using System;
+using csTut=csharp_station.tutorial.myExample2;
+
+
+namespace csharp_station
+{
+	namespace tutorial
+	{
+		class myExample1{
+			public static void print()
+			{
+				Console.WriteLine("first example");
+			}
+		}
+	}
+		
+		
+	class Program{
+  
+        public static void Main(string[] args)
+        {
+	       
+		     tutorial.myExample1.print();
+			 csTut.print2();
+		
+		}
+	}
+}	
+	namespace csharp_station.tutorial
+	{
+		class myExample2
+		{
+			public static void print2()
+			{
+				Console.WriteLine("second example");
+			}
+		}
+	}
+		
+		
+		
+    
+
+***************************************************************************************************************************************************
+
+
+using System;
+
+
+
+namespace examples
+{
+	
+		
+		
+	class Program{
+  
+        public static void Main(string[] args)
+        {
+	       
+		    int[] mynums={5,10,15};
+			bool[][] mybools=new bool[2][];
+			mybools[0]=new bool[2];
+			mybools[1]=new bool[1];
+			double[,] myDoubles=new double[2,2];
+			Console.WriteLine("int[0]={0},int[1]={1},int[2]={2}",mynums[0],mynums[1],mynums[2]);
+		    mybools[0][0]=true;
+			mybools[0][1]=false;
+			mybools[1][0]=true;
+			Console.WriteLine("bool[0][0]={0},bool[0][1]={1},bool[1][1]={2}",mybools[0][0],mybools[0][1],mybools[1][0]);
+			myDoubles[0,0]=3.12;
+			myDoubles[0,1]=3.12;
+			myDoubles[1,0]=3.12;
+			myDoubles[1,1]=3.12;
+			Console.WriteLine("double[0][0]={0},double[0][1]={1},double[1][0]={2}",myDoubles[0,0],myDoubles[0,1],myDoubles[1,0]);
+			
+		}
+	}
+}	
+	
+		
+    
+
+
+
+******************************************************************************************************************************************************************
+
+
+using System;
+
+
+
+namespace examples
+{
+	
+		
+		
+	class Program{
+  
+        public static void Main(string[] args)
+        {
+	    int myInt,select1;
+		int quantityi=1,quantityd=1,quantityp=1,quantityr=1,quantitys=1;
+		int totalcost=0,i=0,k=0;
+		String myInput,myInput1;
+		Program pr=new Program();
+		int[] cost={20,30,40,50,60};
+		String[] list={"idli","dosa","poori","rice","sambar"};
+		String[] bill=new String[5];
+		int[] billcost=new int[5];
+		Console.WriteLine("Menu	        PRICE");
+	    Console.WriteLine("*************");
+	    Console.WriteLine("1) {0}		{1}",list[0],cost[0]);
+	    Console.WriteLine("2) {0}		{1}",list[1],cost[1]);
+	    Console.WriteLine("3) {0} 	    {1}",list[2],cost[2]);
+	    Console.WriteLine("4) {0}		{1}",list[3],cost[3]);
+	    Console.WriteLine("5) {0} 	    {1}",list[4],cost[4]);
+		Console.WriteLine("*************");
+		Console.WriteLine("");
+		
+		
+		
+		bool value=true;
+		
+		begin:
+		while(value)
+		{
+		Console.WriteLine("");
+	    Console.WriteLine("PLEASE CHOOSE AN ITEM");
+	    myInput=Console.ReadLine();
+	    myInt=Int32.Parse(myInput);	
+		switch(myInt)
+		{
+			
+	
+		case 1:
+		    if(quantityi==1)	
+			{
+			Console.WriteLine("1)YOU HAVE SELECTED IDLI");
+			totalcost=totalcost+cost[0];
+			bill[i]=list[0];
+			i++;
+			billcost[k]=cost[0];
+			k++;
+			quantityi=quantityi+1;
+			}
+			else
+			{
+			billcost[k-1]=billcost[k-1]*2;
+			totalcost=totalcost+cost[0];
+			}
+				
+		     break;
+	     case 2:
+		     if(quantityd==1)	
+			{
+			Console.WriteLine("2)YOU HAVE SELECTED DOSA");
+			totalcost=totalcost+cost[1];
+			bill[i]=list[1];
+			i++;
+			billcost[k]=cost[1];
+			k++;
+			quantityd=quantityd+1;
+			}
+			else
+			{
+			billcost[k-1]=billcost[k-1]*2;
+			totalcost=totalcost+cost[0];
+			}
+		    break;
+	     case 3:
+		     if(quantityp==1)	
+			{
+			Console.WriteLine("3)YOU HAVE SELECTED POORI");
+			totalcost=totalcost+cost[2];
+			bill[i]=list[2];
+			i++;
+			billcost[k]=cost[2];
+			k++;
+			quantityp=quantityp+1;
+		    }
+			else
+			{
+			billcost[k-1]=billcost[k-1]*2;
+			totalcost=totalcost+cost[0];
+			}
+		    break;
+	     case 4:
+			if(quantityr==1)	
+			{
+			Console.WriteLine("4)YOU HAVE SELECTED RICE");
+			totalcost=totalcost+cost[3];
+			bill[i]=list[3];
+			i++;
+			billcost[k]=cost[3];
+			k++;
+			quantityr=quantityr+1;
+			}
+			else
+			{
+			billcost[k-1]=billcost[k-1]*2;
+			totalcost=totalcost+cost[0];
+			}
+		    break;
+	      case 5:
+		    if(quantitys==1)	
+			{
+			Console.WriteLine("5)YOU HAVE SELECTED SAMBAR");
+			totalcost=totalcost+cost[4];
+			bill[i]=list[4];
+			i++;
+			billcost[k]=cost[4];
+			k++;
+			quantitys=quantitys+1;
+			}
+			else
+			{
+			billcost[k-1]=billcost[k-1]*2;
+			totalcost=totalcost+cost[0];
+			}
+		    break;
+			
+		default:Console.WriteLine("WRONG OPTION");
+				break;
+		
+       
+	    }
+		    
+		Console.WriteLine("");
+		Console.WriteLine("Type 1 to continue and 0 to quit");
+	    myInput1=Console.ReadLine();
+		select1=Int32.Parse(myInput1);
+		switch(select1)
+		{
+			case 1:
+					goto begin;
+					break;
+			case 0:
+					Console.WriteLine("BYE");
+					Console.WriteLine("*************BILL*******************");
+					
+					for(int j=0;j<k;j++)
+					{
+					    Console.WriteLine("{0}  {1}",bill[j],billcost[j]);
+					}
+					Console.WriteLine("The total cost is {0}",totalcost);
+					value=false;
+					break;
+			default:Console.WriteLine("WRONG SELECTION MADE");
+					value=false;
+					break;
+		}		
+		
+		
+		}
+        }
+		
+		
+			
+		}
+	}
+	
+	
+		
+*********************************************************************************************************************8
+
+
+IMPORTANT
+
+using System;
+
+
+
+namespace examples
+{
+	
+	class Menu
+    {
+		public int srno;
+		public String iname;
+		public int price;
+		public int quantity;
+		public int itotal;
+      public Menu(int srno1,String iname1,int price1,int quantity1,int itotal1)
+	  {
+		  srno=srno1;
+		  iname=iname1;
+		  price=price1;
+		  quantity=quantity1;
+		  itotal=itotal1;
+	  }
+	  
+	} 
+		  
+		
+	class Program{
+  
+        public static void Main(string[] args)
+        {
+	       
+		   
+		   Menu[] marray=new Menu[5];
+		   Program p=new Program();
+		   p.createMenu(marray,p);
+		}
+		
+		public void createMenu(Menu[] marray,Program p)
+		{
+		   marray[0]=new Menu(1,"idli",40,0,0);
+		   marray[1]=new Menu(2,"dosa",50,0,0);
+		   marray[2]=new Menu(3,"poori",30,0,0);
+		   marray[3]=new Menu(4,"upma",60,0,0);
+		   marray[4]=new Menu(5,"chapati",70,0,0);
+		   p.printMenu(marray,p);
+		}
+		public void printMenu(Menu[] marray,Program p)
+		{
+		      Console.WriteLine("**********************************MENU*******************************************************");
+			  Console.WriteLine("SRNO		      "+"ITEMNAME	     "+"PRICE		");
+			   Console.WriteLine("********************************************************************************************");
+		   for(int counter=0;counter<marray.Length;counter++)
+		   {
+			
+			   Console.WriteLine();
+			   Console.Write(marray[counter].srno+"			");
+			   Console.Write(marray[counter].iname+"		");
+			   Console.Write(marray[counter].price+"		");
+		   }
+		   p.chooseItem(marray,p);
+		   
+        }
+		public void chooseItem(Menu[] marray,Program p)
+		{
+		String myInput;
+		int myInt;
+		int totalcost;
+		while(true)
+		{
+		Console.WriteLine("");
+	    Console.WriteLine("PLEASE CHOOSE AN ITEM");
+	    myInput=Console.ReadLine();
+	    myInt=Int32.Parse(myInput);
+        switch(myInt)
+		{
+			case 1:
+				Console.WriteLine("YOU HAVE ENTERED IDLI");
+				marray[0].itotal=marray[0].itotal+marray[0].price;
+				marray[0].quantity=marray[0].quantity+1;
+				break;
+			case 2:
+				Console.WriteLine("YOU HAVE ENTERED DOSA");
+				marray[1].itotal=marray[1].itotal+marray[1].price;
+				marray[1].quantity=marray[1].quantity+1;
+				break;	
+			case 3:
+				Console.WriteLine("YOU HAVE ENTERED POORI");
+				marray[2].itotal=marray[2].itotal+marray[2].price;
+				marray[2].quantity=marray[2].quantity+1;
+				break;	
+			case 4:
+				Console.WriteLine("YOU HAVE ENTERED RICE");
+				marray[3].itotal=marray[3].itotal+marray[3].price;
+				marray[3].quantity=marray[3].quantity+1;
+				break;	
+            case 5:
+				Console.WriteLine("YOU HAVE ENTERED SAMBAR");
+				marray[4].itotal=marray[4].itotal+marray[4].price;
+				marray[4].quantity=marray[4].quantity+1;
+				break;				
+
+			default:
+				Console.WriteLine("YOUR NUMBER {0} is not between 1 and 5",myInt);
+				break;
+			
+		
+		}
+		Console.WriteLine("");
+		Console.WriteLine("Type 1 to continue and 0 to quit");
+	    String myInput1=Console.ReadLine();
+		int select1=Int32.Parse(myInput1);
+		
+		switch(select1)
+		{
+			case 1:continue;
+		           break;
+		     case 0:p.billoutput(marray,p);
+					goto end;
+					break;
+					
+			default:Console.WriteLine("Wrong option entered");
+					break;
+		
+			
+		}
+		}
+	}
+	public void billoutput(Menu[] marray,Program p)
+	{
+		Console.WriteLine("**********************************MENU*******************************************************");
+			  Console.WriteLine("SRNO		      "+"ITEMNAME	     "+"PRICE		");
+			   Console.WriteLine("********************************************************************************************");
+		   for(int counter=0;counter<marray.Length;counter++)
+		   {
+			
+			   Console.WriteLine();
+			   Console.Write(marray[counter].srno+"			");
+			   Console.Write(marray[counter].iname+"		");
+			   Console.Write(marray[counter].price+"		");
+			   Console.Write(marray[counter].quantity+"		");
+			   Console.Write(marray[counter].itotal+"		");
+		   }
+		   
+	}
+	end:
+	
+}
+}  
+
+
+***************************************************************************ADWDADW*********************************************************
+
+
+using System;
+/*
+Inherit square and cube for side
+*/
+namespace examples
+{
+	
+	public class Side
+	{
+			public int length;
+			public Side(int length1)
+			{
+				length=length1;
+			}
+	}
+	public class Square:Side
+	{
+            
+       public Square(int length):base(length)
+	   {
+		   
+	   }
+	   public new void area()
+	   {
+		   
+		   Console.WriteLine("The area of a class is {0}",length*length);
+	   }
+	}
+	public class Cube:Side
+	{
+            
+       public Cube(int length):base(length)
+	   {
+		   
+	   }
+	   public new void volume()
+	   {
+		   
+		   Console.WriteLine("The volume of a class is {0}",length*length*length);
+	   }
+	}
+	class Program{
+	   public static void Main()
+	   {
+		Square sq=new Square(5);
+		sq.area();
+		Cube cu=new Cube(5);
+		cu.volume();
+	   }
+	   
+}
+}  
+
+************************************************************************************************************************************
+
+
+using System;
+/*
+Inherit square and cube for side
+*/
+namespace examples
+{
+	
+	public class Grandfather                                                        
+	{
+			private int totalmoney;
+			public Grandfather(int totalmoney1)
+			{
+				totalmoney=totalmoney1;
+				Console.WriteLine("grandfather");
+			}
+	}
+	public class Father:Grandfather
+	{
+       private int fmoney; 
+       public Father(int fmoney1,int totalmoney):base(totalmoney)
+	   {
+		   fmoney=fmoney1+totalmoney;
+		   Console.WriteLine("father");
+	   }
+	
+	}
+	sealed class Mother
+	{
+		private int momoney;
+		private int bmoney;
+		public Mother(int momoney)
+		{
+			this.momoney=momoney;
+		}
+		
+		public int interest()
+		{
+			bmoney=momoney-50;
+			return bmoney;
+		}
+		
+	}
+	
+	public class Child:Father
+	{
+            private int cmoney;
+			private int mommoney;
+			Mother m=new Mother(100);
+			
+			
+       public Child(int cmoney1,int fmoney,int totalmoney):base(fmoney,totalmoney)
+	   {
+		   cmoney=cmoney1+fmoney+totalmoney;
+		   mommoney=m.interest();
+	   }
+	   public  void cost()
+	   {
+		   
+		   Console.WriteLine("The totalcost is {0}",cmoney);
+	   }
+	   public  void momcost()
+	   {
+		   
+		   Console.WriteLine("The totalcost is {0}",mommoney);
+	   }
+	}
+	class Program{
+	   public static void Main()
+	   {
+	
+		Child c=new Child(40,30,50);
+		c.cost();
+		c.momcost();
+	
+	   }
+	   
+}
+}  
+
+
+**********************************************************************************************************************************************
+
+
+
+requirements
+
+REGISTRATION PROCESS
+EMAIL ID VERIFY
+MOBILE NUMBER VERIFY
+
+test management system
+subjects to be tested on
+subject category-subjects-test
+multiple test ids
+each test will have questions four answers and one correct.
+
+test delivery system
+register for one or multiple exams
+candidate id--which test he or she wants to appear.
+if not 
+throw messages 
+if yes
+start the exam
+
+******************************************************************
+
+    class QandA
+	{
+		String[] questions=new String[3];
+		String[] answers=new String[3];
+		public QandA()
+		{
+		questions[0]="what is your name";
+		questions[1]="what is your game";
+		questions[2]="what is your lame";
+		answers[0]="what is your name";
+		answers[1]="what is your game";
+		answers[2]="what is your lame";
+		}
+		
+		
+	}
+	
+	
+	class subjects
+	{
+	    String name;
+		int id;
+		QandA[] qa=new QandA[5];	
+	}
+	
+	
+	class categories
+	{
+		subjects[] su=new subjects[5];
+	}
+	
+	
+	
+	class Program
+    {
+        static void Main(string[] args)
+        {
+	   
+	    
+	    
+	
+
+        }
+
+
+
+*************************************************************************************************************************
+
+using System;
+
+namespace examples
+{
+	interface implementor
+	{
+        void method();		
+	}
+	
+	interface implementor1:implementor
+	{
+		void pomethod();
+	}
+	class Program:implementor
+	{
+		static void Main()
+		{
+			Program imp=new Program();
+			imp.method();
+			imp.pomethod();
+		}
+		public void method()
+		{
+			Console.WriteLine("hey");
+		}
+		public void pomethod()
+		{
+			Console.WriteLine("hello");
+		}
+		
+		
+
+    }
+}
+
+
+*************************************************************************************************************************
+
+
+
+
+
+
+using System;
+
+namespace examples
+{
+	interface enginee
+	{
+		void efficiency();
+		
+	}
+	abstract class Engine
+	{
+		
+		
+		public abstract void showType();
+		
+		public void engineLoad()
+		{
+			Console.WriteLine("the engine load is 90% higher");
+		}
+	}
+	
+	class DieselEngine:Engine,enginee
+	{
+		public override void showType(){
+			Console.WriteLine("the type is a diesel engine");
+		}
+		public void efficiency(){
+			Console.WriteLine("efficiency is 60%");
+		}
+		
+	}
+	
+	class CngEngine:Engine,enginee
+	{
+		public override void showType(){
+			Console.WriteLine("the type is a cng engine");
+		}
+		public void efficiency(){
+			Console.WriteLine("efficiency is 50%");
+		}
+	}
+	
+	class LpgEngine:Engine,enginee
+	{
+		public override void showType(){
+			Console.WriteLine("the type is a lpg engine");
+		}
+		public void efficiency(){
+			Console.WriteLine("efficiency is 40%");
+		}
+	}
+	
+		
+	class Program
+	{
+		static void Main()
+		{
+			DieselEngine d=new DieselEngine();
+			d.showType();
+			d.efficiency();
+			d.engineLoad();
+			CngEngine c=new CngEngine();
+			c.showType();
+			c.efficiency();
+			LpgEngine l=new LpgEngine();
+			l.showType();
+			l.efficiency();
+			d.engineLoad();
+		
+
+    }
+}
+
+}
+
+
+
+
+*****************************************************************************************************************************************
+using System;
+
+namespace examples
+{
+	
+	class Parent 
+	{
+		
+		
+		
+		public void travels()
+		{
+			Console.WriteLine("the parent travels fast");
+		}
+	}
+	
+	class Child:Parent
+	{
+		public new void travels(){
+			Console.WriteLine("the child travels slowly");
+		}
+		
+		
+		
+	}
+	
+
+		
+	class Program
+	{
+		static void Main()
+		{
+			Parent p=new Child();
+			p.travels();
+			
+			
+
+    }
+}
+
+}
+
+*******************************************************************************************************************************************
+
+
+using System;
+
+namespace examples
+{
+	
+	interface library
+	{
+	  void issuebook();
+
+	  void readbook();
+		
+	  void returnbook();
+
+	  void payfine();
+		
+	}
+	
+	abstract class membership
+	{
+		public void valdity()
+		{
+			Console.WriteLine("The validity of the subscription is 1 year");
+		}
+
+	    	
+	}
+	class SilverMembership:membership,library
+	{
+	  public void issuebook()
+	  { 
+	  Console.WriteLine("Only 2 books can be issued at a time");
+	  }
+
+	  public void readbook()
+	  {
+		  Console.WriteLine("Only 1 book can be taken for reading at a time");
+	  }
+		
+	  public void returnbook()
+	  {
+		  Console.WriteLine("The book should be returned before 2 days");
+	  }
+
+	  public void payfine()
+	  {
+		  Console.WriteLine("The fine per day is 100rs");
+
+	  }
+	  
+	
+	}
+	class GoldMembership:SilverMembership,library
+	{
+	   public new void issuebook()
+	  { 
+	  Console.WriteLine("Only 4 books can be issued at a time");
+	  }
+
+	   public new void readbook()
+	  {
+		  Console.WriteLine("Only 2 book can be taken for reading at a time");
+	  }
+		
+	   public new void returnbook()
+	  {
+		  Console.WriteLine("The book should be returned before 4 days");
+	  }
+
+	   public new void payfine()
+	  {
+		  Console.WriteLine("The fine per day is 75rs");
+
+	  }
+	  public void audiocds()
+	  {
+		  Console.WriteLine("audio cds could be availed");
+	  }
+	  
+	
+	}
+    class PlatinumMembership:GoldMembership,library
+	{
+	   public new void issuebook()
+	  { Console.WriteLine("Only 6 books can be issued at a time");}
+
+	   public new void readbook()
+	  {
+		  Console.WriteLine("Only 3 book can be taken for reading at a time");
+	  }
+		
+	   public new void returnbook()
+	  {
+		  Console.WriteLine("The book should be returned before 9 days");
+	  }
+
+	   public new void payfine()
+	  {
+		  Console.WriteLine("The fine per day is 10rs");
+
+	  }
+	   public void videocds()
+	  {
+		  Console.WriteLine("video cds could be availed");
+	  }
+	  
+	
+	}
+		
+	class Program
+	{
+		static void Main()
+		{
+			SilverMembership s1=new SilverMembership();
+			s1.issuebook();
+			s1.returnbook();
+			s1.payfine();
+			s1.readbook();
+			s1.valdity();
+			GoldMembership g1=new GoldMembership();
+			g1.issuebook();
+			g1.returnbook();
+			g1.payfine();
+			g1.readbook();
+			g1.audiocds();
+			PlatinumMembership p1=new PlatinumMembership();
+			p1.issuebook();
+			p1.returnbook();
+			p1.payfine();
+			p1.readbook();
+			p1.audiocds();
+			p1.videocds();
+			
+			
+			
+			
+
+    }
+}
+
+}
+
+
+
+***********************************************************************************************************************************************
+
+
+
+
+
+using System;
+
+namespace examples
+{
+	
+	class Account
+	{
+	  	private int account_no;
+		
+		public int accno
+		{
+			get
+			{
+				return account_no;
+			}
+			set
+			{
+				account_no=value;
+			}
+		}
+		
+		private string account_name;
+		public string accname
+		{
+			get
+			{
+				return account_name;
+			}
+			set
+			{
+				account_name=value;
+			}
+		}
+		
+		public void changeacc()
+		{
+			Console.WriteLine(account_no);
+		}
+		
+		
+		
+    }
+	class Program
+	{
+		static void Main()
+		{
+		Account account=new Account();
+		account.accno=1234;
+		account.accno=account.accno+5;
+		account.accname="tejas";
+		account.changeacc();
+		Console.WriteLine("the account number is"+account.accno);
+		Console.WriteLine("the account name is"+account.accname);
+		
+			
+			
+
+    }
+}
+
+}
+
+
+
+
+
+*******************************************************************************************************************************************
+
+using System;
+using System.IO;
+
+namespace examples
+{
+	
+	class Program
+	{
+		static void Main()
+		{
+			int a=10;
+			int b;
+		
+		    try{
+				try{
+					b=a/0;
+				}
+				catch(ArithmeticException ex)
+				{
+					Console.WriteLine("inner catch");
+				}
+				Console.WriteLine("hey");
+				Console.WriteLine("hello");
+			}
+			catch(Exception ex)
+			{
+				Console.WriteLine("outer catch");
+			}
+					
+		
+			
+			Console.WriteLine("hey");
+				Console.WriteLine("hello");
+		
+			
+			
+
+    }
+}
+
+}
+
+
+
+
+line 1-input from source1;
+line 2 may error -divide by zeo--buisnesslogicb2
+line 4 may error -divide by zero--buisnesslogicb4
+line 3-input from source1;
+line 5-confirmation message-everything perfect;
+
+
+******************************************************************************************
+
+using System;
+using System.IO;
+
+namespace examples
+{
+
+	class  Employee
+	{
+		protected string name;
+		protected int  eid;
+		protected string elocation;
+		protected int percentAchieved;
+		
+		public Employee(string name,int eid,string elocation)
+		{
+			this.name=name;
+			this.eid=eid;
+			this.elocation=elocation;
+		}
+	}
+	class TechnicalEmployee:Employee
+	{
+		int billableAmt;
+		int techUpgrades;
+		int certificationsdone;
+		
+		
+		public TechnicalEmployee(string name,int eid,string elocation,int billableAmt,int techUpgrades,int certificationsdone):base(name,eid,elocation)
+		{
+			this.billableAmt=billableAmt;
+			this.techUpgrades=techUpgrades;
+			this.certificationsdone=certificationsdone;
+		}
+		 public int billableCheck()
+		{
+			if(this.billableAmt>2000)
+			{
+				this.percentAchieved=60;
+				return this.percentAchieved;
+			}
+			else
+			{
+				this.percentAchieved=((this.billableAmt*100)/2000);
+				this.percentAchieved=((this.percentAchieved*60)/100);
+				//Console.WriteLine("the percentAchieved is "+this.percentAchieved);
+				return this.percentAchieved;
+			}
+		}		
+		public int techUpgradesfun(int percentnew)
+		{
+			if(this.techUpgrades>2)
+			{
+				percentnew=percentnew+10;
+				
+				 return percentnew;
+			}
+			else if(this.techUpgrades==2)
+			{
+			    percentnew=percentnew+6;
+				Console.WriteLine("the percentAchieved is "+percentnew);
+				 return percentnew;
+			}
+			else if(this.techUpgrades==1)
+			{
+			    percentnew=percentnew+3;
+				
+				 return percentnew;
+			}
+			else
+			{
+				 return percentnew;
+			}
+		}
+		
+		public int rateAchievment(int percentr)
+		{
+			    int rateOfAchievment;
+		      	rateOfAchievment=((percentr*10)/100);
+				return rateOfAchievment;
+			
+			
+		}
+		public void grade(int gradenum)
+		{
+			if(gradenum>80)
+			{
+				Console.WriteLine("outstanding");
+			}
+			else if(gradenum>60 && gradenum<80)
+			{
+				Console.WriteLine("good");
+			}
+			else if(gradenum>40 &&gradenum<60)
+			{
+				Console.WriteLine("average");
+			}
+			else
+			{
+				Console.WriteLine("poor");
+			}
+	}
+	
+			public int certifications(int percentA)
+			{
+				if(this.certificationsdone==1)
+				{
+					Console.WriteLine(percentA+10);
+					return (percentA+10);
+					
+				}
+				else
+					
+					return percentA;
+	       }
+	}
+	/**
+	class MarketEmployee:TechnicalEmployee
+	{
+		int targetsales;
+		int percentAchieved;
+		MarketEmployee(string name,int eid,string elocation,int targetsales):base(name,eid,elocation)
+		{
+		  this.targetsales=targetsales;
+		
+		}
+		 public int TargetSales()
+		{
+			if(this.targetsales>2000)
+			{
+				this.percentAchieved=100;
+				return this.percentAchieved;
+			}
+			else
+			{
+				this.percentAchieved=((this.billableAmt*100)/2000);
+				//Console.WriteLine("the percentAchieved is "+this.percentAchieved);
+				return this.percentAchieved;
+			}
+		}		
+		
+		
+		
+	}
+    /***override employee rateOfAchievment and grade*/
+	class Manager
+	{
+		static void Main()
+		{
+		    TechnicalEmployee t=new TechnicalEmployee("tejas",12,"dandeli",1000,2,1);
+			
+			int per;
+			int per1;
+			int per2;
+			per=t.billableCheck();
+			per1=t.techUpgradesfun(per);
+			per2=t.certifications(per1);
+			t.grade(per2);
+		   
+		
+
+    }
+}
+
+}

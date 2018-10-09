@@ -1,0 +1,37 @@
+using System;
+
+namespace examples
+{
+	
+	class OuterClass
+	{
+		String myString;
+		
+		public OuterClass()
+		{
+			Console.WriteLine("hey");
+		}
+		public OuterClass(String mString)
+		{
+			myString=mString;
+		}
+		
+		public void printOuterClass()
+		{
+			Console.WriteLine("{0}",myString);
+		}
+		
+	}
+	class Program{
+  
+        static void Main(string[] args)
+        {
+	       OuterClass outer=new OuterClass("hey how are you");
+		   OuterClass outer1=new OuterClass();
+			outer.printOuterClass();
+		
+	    
+		
+		
+		}
+		

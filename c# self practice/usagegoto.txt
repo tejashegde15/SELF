@@ -1,0 +1,47 @@
+using System;
+
+namespace examples
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+	    String myInput;
+	    int myInt;
+	    
+begin:
+       	    Console.WriteLine("WELCOME");
+	    myInput=Console.ReadLine();
+	    myInt=Int32.Parse(myInput);
+	    
+            switch(myInt)
+		{
+			case 1:
+				Console.WriteLine("YOU HAVE ENTERED {0}",myInt);
+				break;
+			case 2:
+				Console.WriteLine("YOU HAVE ENTERED {0}",myInt);
+				break;	
+			case 3:
+				Console.WriteLine("YOU HAVE ENTERED {0}",myInt);
+				break;	
+			default:
+				Console.WriteLine("YOUR NUMBER {0} is not between 0 and 3",myInt);
+				break;
+		}
+
+decide:
+		Console.WriteLine("Type \"continue\" or \"quit\" to quit",myInt);
+	    	    myInput=Console.ReadLine();
+		switch(myInput)
+		{
+			case "continue":
+					goto begin;
+					break;
+			case "quit":
+					Console.WriteLine("BYE");
+					break;
+			default:goto decide;
+					break;
+		}			
+
