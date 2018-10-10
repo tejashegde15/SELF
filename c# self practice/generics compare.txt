@@ -1,0 +1,96 @@
+using System;
+using System.IO;
+
+namespace examples
+{
+
+	class Employee
+	{
+		public string name;
+		public int id;
+		
+		public Employee(string name,int id)
+		{
+		this.name=name;
+		this.id=id;		
+		}
+		
+		public override string ToString()
+		{
+			return (this.name+this.id);
+		}
+	
+	}
+	class Person
+	{
+		public string name;
+		public int id;
+		
+		public Person(string name,int id)
+		{
+		this.name=name;
+		this.id=id;		
+		}
+		
+		public override string ToString()
+		{
+			return (this.name+this.id);
+		}
+	}
+	class MyGenericClass<T>
+	{
+		private T genericnumberVariable;
+		
+		public MyGenericClass(T value)
+		{
+			genericnumberVariable=value;
+		}
+		
+		public T genericMethod(T genericParameter)
+		{
+		  Console.WriteLine("parameter type:{0},value:{1}",typeof(T),genericParameter);
+		 Console.WriteLine("return type:{0},value:{1}",typeof(T).ToString(),genericnumberVariable);
+		  return genericnumberVariable;
+		}
+		public static  bool anotherGenericMethod(T genericParameter,T genericParameter1)
+		{
+			if((Person)genericParameter.name.Equals((Employee)genericParameter1.name))
+			{
+				Console.WriteLine("true");
+				return true;
+			}
+			else
+			{
+				
+				Console.WriteLine("false");
+				return false;
+			}
+		}
+    public T genericProperty{get;set;}
+	
+	}
+	class Program
+	{
+		static void Main()
+		{
+			MyGenericClass<int> v_MyGenericClass=new MyGenericClass<int>(12);
+			MyGenericClass<String> w_MyGenericClass=new MyGenericClass<String>("tejas");
+			v_MyGenericClass.genericMethod(12);
+			MyGenericClass<int>.anotherGenericMethod(2,3);
+			MyGenericClass<string>.anotherGenericMethod("tejas","tejas");
+			MyGenericClass<int> c_MyGenericClass=new MyGenericClass<int>(21);
+			c_MyGenericClass.genericMethod(12);
+			Employee e=new Employee("tejas",12);
+			Person p=new Person("tejas",45);
+			Employee e1=new Employee("tejas",13);
+			MyGenericClass<Employee> e_MyGenericClass=new MyGenericClass<Employee>(e);
+			MyGenericClass<Employee> e_MyGenericClass1=new MyGenericClass<Employee>(e1);
+			MyGenericClass<Person> p_MyGenericClass=new MyGenericClass<Person>(p);
+			//Console.WriteLine(e_MyGenericClass.ToString());
+		    MyGenericClass<Employee>.anotherGenericMethod(p,e);
+			
+			
+		}
+
+	}
+}
